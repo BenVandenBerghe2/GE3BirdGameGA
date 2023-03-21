@@ -7,14 +7,13 @@ public class StartGA : MonoBehaviour ,IGameAnalyticsATTListener
 {
     void Start()
     {
-        if (Application.platform == RuntimePlatform.IPhonePlayer)
-        {
-            GameAnalytics.RequestTrackingAuthorization(this);
-        }
-        else
-        {
+    //    if (Application.platform == RuntimePlatform.IPhonePlayer)
+    //    {
+    //        GameAnalytics.RequestTrackingAuthorization(this);
+    //    }
+        
             GameAnalytics.Initialize();
-        }
+        
     }
 
     public void GameAnalyticsATTListenerNotDetermined()
